@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio profesional de Soledad Córdoba - Desarrolladora Web & Backend especializada en sistemas de gestión, C#, .NET, PHP y SQL Server.">
+        <meta name="author" content="Soledad Córdoba">
+        <meta name="theme-color" content="#2A2F63">
+        <title>Soledad Córdoba | Desarrolladora Web & Backend</title>
+        
+        <!-- Hoja de Estilos Principal (CSS puro sin dependencias externas) -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-- ==========================================================================
+        1. MENÚ DE NAVEGACIÓN FIJO (Pure CSS Hamburguesa con Checkbox Hack)
+        ========================================================================== -->
+        <header class="header">
+            <div class="container nav-container">
+            <!-- Logo de la Desarrolladora -->
+            <a href="#inicio" class="logo" aria-label="Ir al inicio">
+                <span class="logo-badge">&lt;/&gt;</span>
+                <span>SC Dev</span>
+            </a>
+
+            <!-- Truco del Checkbox + Label para Menú Hamburguesa sin JavaScript -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar menú de navegación">
+            <label for="nav-toggle" class="nav-toggle-btn" aria-label="Alternar menú">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </label>
+
+            <!-- Enlaces de navegación con anclas internas -->
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li class="nav-item"><a href="#conocimientos" class="nav-link">Conocimientos</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#redes" class="nav-link">Redes</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            </div>
+        </header>
+
+        <!-- ==========================================================================
+        2. PRESENTACIÓN INICIAL CON FOTO (#inicio)
+        ========================================================================== -->
+        <main>
+            <section id="inicio" class="hero-section tech-grid-bg">
+                <div class="container">
+                    <div class="hero-grid">
+                    
+                    <!-- Columna Izquierda: Información Principal y Botones -->
+                    <div class="hero-text-col">
+                        <p class="hero-greeting">
+                        <span>👋</span> Hola, mi nombre es
+                        </p>
+                        <h1 class="hero-name">Soledad Córdoba</h1>
+                        
+                        <!-- Título Profesional -->
+                        <div class="hero-title-badge">
+                        Desarrolladora Web &amp; Backend | Sistemas de Gestión (.NET / PHP / SQL)
+                        </div>
+
+                        <!-- Frase de Presentación (máximo 2 oraciones, clara y orientada al reclutador) -->
+                        <p class="hero-description">
+                        Especializada en el desarrollo de aplicaciones web robustas y optimización de flujos operativos para sistemas de gestión empresarial. Apasionada por modelar arquitecturas eficientes, consultar bases de datos relacionales y crear soluciones digitales escalables.
+                        </p>
+
+                        <!-- Botones de Acción -->
+                        <div class="hero-cta-buttons">
+                        <a href="#proyectos" class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                            Ver proyectos
+                        </a>
+                        <!-- Enlace de Descarga de CV con atributo download -->
+                        <a href="cv/CV_CORDOBA_SOLEDAD.pdf" download="CV_CORDOBA_SOLEDAD.pdf" class="btn btn-accent">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Descargar CV
+                        </a>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Foto de Perfil con Marco Estilo Tecnológico -->
+                    <div class="hero-image-col">
+                        <div class="hero-frame-wrapper">
+                        <!-- Elementos decorativos de líneas y curvas sutiles -->
+                        <div class="hero-frame-circuit" aria-hidden="true"></div>
+                        <div class="hero-frame-glow" aria-hidden="true"></div>
+                        
+                        <!-- Imagen de Perfil (Placeholder con fondo si aún no existe) -->
+                        <div class="hero-image-box">
+                            <img src="img/foto-perfil.png" alt="Foto de perfil de Soledad Córdoba, Desarrolladora Web & Backend">
+                        </div>
+
+                        <!-- Indicador de Disponibilidad / Estado -->
+                        <div class="hero-floating-badge">
+                            <span class="status-dot"></span>
+                            <span>Disponible para proyectos</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Divisor decorativo tecnológico con curvas sutiles -->
+            <div class="tech-divider" aria-hidden="true">
+                <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+                    <path d="M0,0 C300,35 900,5 1200,30 L1200,40 L0,40 Z" fill="rgba(167, 224, 219, 0.25)"></path>
+                </svg>
+            </div>
+
+            <!-- ==========================================================================
+            3. INFORMACIÓN GENERAL / SOBRE MÍ (#sobre-mi)
+            ========================================================================== -->
+            <section id="sobre-mi" class="section-wrapper">
+                <div class="container">
+                    
+                    <div class="section-header">
+                        <span class="section-tag">Perfil Profesional</span>
+                        <h2 class="section-title">Sobre mí</h2>
+                        <p class="section-subtitle">
+                            Compromiso con el código limpio, la optimización de procesos empresariales y el desarrollo de sistemas estables.
+                        </p>
+                    </div>
+
+                    <!-- Descripción personal detallada -->
+                    <article class="about-bio-card">
+                        <p>
+                            Soy <strong>Desarrolladora Web</strong> en <strong>ROWA S.A.</strong>, una compañía líder en la fabricación de sistemas de presurización y bombas de agua. Durante mi trayectoria me he especializado en el desarrollo de aplicaciones web internas y herramientas tecnológicas orientadas a la optimización de flujos de trabajo, automatización de tareas y mejora en la eficiencia de servicios.
+                        </p>
+                        <p>
+                            Cuento con formación universitaria cursando la <strong>Tecnicatura en Programación en la Universidad Tecnológica Nacional (UTN)</strong> y certificación como Desarrolladora Full Stack. Domino tanto el diseño backend (PHP, C#, SQL Server, MySQL) como la maquetación web accesible (HTML5, CSS3, JavaScript y Bootstrap), complementado con experiencia en control de versiones Git/GitHub y despliegues en entornos de producción y testing.
+                        </p>
+                    </article>
+
+                    <!-- Tarjetas de datos rápidos -->
+                    <div class="quick-facts-grid">
+                    
+                        <div class="fact-card">
+                            <div class="fact-icon-box" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </div>
+                            <div class="fact-content">
+                                <h4>Ubicación</h4>
+                                <p>José C. Paz, Buenos Aires, Argentina</p>
+                            </div>
+                        </div>
+
+                        <div class="fact-card">
+                            <div class="fact-icon-box" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 21l3.68-.97C9.44 20.64 10.68 21 12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 14h-2v-2h2v2zm2-6h-4V7h4v4z"/></svg>
+                            </div>
+                            <div class="fact-content">
+                                <h4>Idiomas</h4>
+                                <p>Español (Nativo) • Inglés Técnico</p>
+                            </div>
+                        </div>
+
+                        <div class="fact-card">
+                            <div class="fact-icon-box" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                            </div>
+                            <div class="fact-content">
+                                <h4>Educación</h4>
+                                <p>Tecnicatura Universitaria en Programación (UTN - en curso)</p>
+                            </div>
+                        </div>
+
+                        <div class="fact-card">
+                            <div class="fact-icon-box" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                            </div>
+                            <div class="fact-content">
+                                <h4>Experiencia Actual</h4>
+                                <p>Junior Web Developer en ROWA S.A. (Dic. 2024 – Presente)</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Timeline Breve de Experiencia Laboral -->
+                    <div class="timeline-title-wrapper">
+                        <h3 class="timeline-title">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            Trayectoria Profesional
+                        </h3>
+                    </div>
+
+                    <div class="timeline">
+                    
+                        <!-- Puesto Actual -->
+                        <div class="timeline-item active">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-badge">Dic. 2024 – Presente</span>
+                                <h4 class="timeline-role">Junior Web Developer</h4>
+                                <div class="timeline-company">ROWA S.A.</div>
+                                <p class="timeline-desc">
+                                    Desarrollo frontend y backend de aplicaciones web con PHP y JavaScript. Maquetación responsive (HTML5, CSS3, Bootstrap), diseño y optimización de consultas SQL (MySQL / SQL Server), pruebas de calidad (testing), control de versiones con Git/GitHub y despliegues a entornos productivos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Experiencia Previa en ROWA -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-badge">Jun. 2021 – Nov. 2024</span>
+                                <h4 class="timeline-role">Representante de Servicio Técnico</h4>
+                                <div class="timeline-company">ROWA S.A.</div>
+                                <p class="timeline-desc">
+                                    Servicio técnico post venta, atención de tickets de soporte técnico, gestión de garantías y coordinación de servicios a domicilio con técnicos de campo. Conocimiento integral de la operativa interna de la empresa.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Experiencia en ADT -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-badge">Jul. 2017 – Mar. 2021</span>
+                                <h4 class="timeline-role">Representante de Atención al Cliente</h4>
+                                <div class="timeline-company">ADT</div>
+                                <p class="timeline-desc">
+                                    Consultas técnicas, soporte administrativo, resolución de quejas y reclamos, soporte a sistemas móviles y retención de cartera de clientes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Experiencia en SC TECNO -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-badge">Feb. 2015 – Jun. 2017</span>
+                                <h4 class="timeline-role">Vendedora y Gestión de Ventas</h4>
+                                <div class="timeline-company">SC TECNO</div>
+                                <p class="timeline-desc">
+                                    Emprendimiento comercial enfocado en artículos de sonido y telefonía móvil. Administración de stock, captación mediante redes sociales y atención comercial.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Divisor decorativo tecnológico -->
+            <div class="tech-divider" aria-hidden="true">
+                <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+                    <path d="M0,30 C300,5 900,35 1200,0 L1200,40 L0,40 Z" fill="rgba(42, 47, 99, 0.04)"></path>
+                </svg>
+            </div>
+
+            <!-- ==========================================================================
+            4. CONOCIMIENTOS TÉCNICOS (#conocimientos)
+            (Agrupados por categoría, sin barras de porcentaje)
+            ========================================================================== -->
+            <section id="conocimientos" class="section-wrapper">
+                <div class="container">
+                    
+                    <div class="section-header">
+                        <span class="section-tag">Stack Tecnológico</span>
+                        <h2 class="section-title">Conocimientos</h2>
+                        <p class="section-subtitle">
+                            Habilidades técnicas y herramientas aplicadas a la ingeniería de software y sistemas de gestión.
+                        </p>
+                    </div>
+
+                    <div class="skills-grid">
+                    
+                        <!-- Categoría 1: Backend & Lenguajes -->
+                        <div class="skill-category-card">
+                            <div class="skill-cat-header">
+                                <div class="skill-cat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                                </div>
+                                <h3 class="skill-cat-title">Lenguajes &amp; Backend</h3>
+                            </div>
+                            <div class="skill-badges-container">
+                                <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>C# (.NET)</span>
+                                <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>PHP</span>
+                                <span class="skill-tag"><span class="skill-dot"></span>JavaScript (ES6+)</span>
+                                <span class="skill-tag"><span class="skill-dot"></span>C++</span>
+                                <span class="skill-tag"><span class="skill-dot"></span>POO &amp; Arquitectura</span>
+                                <span class="skill-tag"><span class="skill-dot"></span>Python</span>
+                            </div>
+                        </div>
+
+                        <!-- Categoría 2: Bases de Datos & Gestión -->
+                        <div class="skill-category-card">
+                            <div class="skill-cat-header">
+                                <div class="skill-cat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2zm0 14c-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V17c0 .5-2.13 2-6 2zm0-5c-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V12c0 .5-2.13 2-6 2z"/></svg>
+                                </div>
+                                <h3 class="skill-cat-title">Bases de Datos &amp; SQL</h3>
+                            </div>
+                            <div class="skill-badges-container">
+                                <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>SQL Server</span>
+                                <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>MySQL</span>
+                                <span class="skill-tag"><span class="skill-dot"></span>Modelado Relacional</span>
+                                <span class="skill-tag"><span class="skill-dot"></span>Optimización de Consultas</span>
+                                <span class="skill-tag"><span class="skill-dot"></span>Normalización de Datos</span>
+                            </div>
+                        </div>
+
+                        <!-- Categoría 3: Frontend & Web -->
+                        <div class="skill-category-card">
+                            <div class="skill-cat-header">
+                            <div class="skill-cat-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/></svg>
+                            </div>
+                            <h3 class="skill-cat-title">Desarrollo Web &amp; Frontend</h3>
+                            </div>
+                            <div class="skill-badges-container">
+                            <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>HTML5 Semántico</span>
+                            <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>CSS3 Moderno</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Bootstrap</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Responsive &amp; Mobile First</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Flexbox &amp; CSS Grid</span>
+                            </div>
+                        </div>
+
+                        <!-- Categoría 4: Herramientas & Flujo -->
+                        <div class="skill-category-card">
+                            <div class="skill-cat-header">
+                            <div class="skill-cat-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                            </div>
+                            <h3 class="skill-cat-title">Herramientas &amp; Control</h3>
+                            </div>
+                            <div class="skill-badges-container">
+                            <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>Git</span>
+                            <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>GitHub</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Entornos Testing / Producción</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Testing &amp; QA</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Postman / REST APIs</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>VS Code &amp; Visual Studio</span>
+                            </div>
+                        </div>
+
+                        <!-- Categoría 5: Diseño & Edición -->
+                        <div class="skill-category-card">
+                            <div class="skill-cat-header">
+                            <div class="skill-cat-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10c1.38 0 2.5-1.12 2.5-2.5 0-.61-.23-1.2-.64-1.67-.08-.1-.13-.21-.13-.33 0-.28.22-.5.5-.5H16c3.31 0 6-2.69 6-6 0-4.96-4.49-9-10-9zm-5.5 11c-.83 0-1.5-.67-1.5-1.5S5.67 10 6.5 10s1.5.67 1.5 1.5S7.33 13 6.5 13zm3-4C8.67 9 8 8.33 8 7.5S8.67 6 9.5 6s1.5.67 1.5 1.5S10.33 9 9.5 9zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 6 14.5 6s1.5.67 1.5 1.5S15.33 9 14.5 9zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 10 17.5 10s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                            </div>
+                            <h3 class="skill-cat-title">Diseño &amp; Edición</h3>
+                            </div>
+                            <div class="skill-badges-container">
+                                <span class="skill-tag"><span class="skill-dot"></span>Diseño Web Técnico</span>
+                                <span class="skill-tag"><span class="skill-dot"></span>Prototipado UI</span>
+                            </div>
+                        </div>
+
+                        <!-- Categoría 6: Gestión & Negocio -->
+                        <div class="skill-category-card">
+                            <div class="skill-cat-header">
+                            <div class="skill-cat-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+                            </div>
+                            <h3 class="skill-cat-title">Gestión &amp; Competencias</h3>
+                            </div>
+                            <div class="skill-badges-container">
+                            <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>Sistemas de Gestión Interna</span>
+                            <span class="skill-tag skill-tag-featured"><span class="skill-dot"></span>Resolución de Errores en Vivo</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Relevamiento de Procesos</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Metodologías Ágiles</span>
+                            <span class="skill-tag"><span class="skill-dot"></span>Inglés Técnico</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Divisor decorativo tecnológico -->
+            <div class="tech-divider" aria-hidden="true">
+                <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+                    <path d="M0,0 C300,30 900,10 1200,35 L1200,40 L0,40 Z" fill="rgba(167, 224, 219, 0.25)"></path>
+                </svg>
+            </div>
+
+            <!-- ==========================================================================
+            5. PROYECTOS (#proyectos)
+            (3 destacados más grandes + otros proyectos debajo)
+            ========================================================================== -->
+            <section id="proyectos" class="section-wrapper tech-grid-bg">
+                <div class="container">
+                    
+                    <div class="section-header">
+                    <span class="section-tag">Portafolio</span>
+                    <h2 class="section-title">Proyectos</h2>
+                    <p class="section-subtitle">
+                        Soluciones aplicadas enfocadas en sistemas de gestión empresarial, servicios técnicos y desarrollo web eficiente.
+                    </p>
+                    </div>
+
+                    <!-- Grupo: Proyectos Destacados (Más grandes) -->
+                    <h3 class="projects-group-title">
+                    <span>Proyectos Destacados</span>
+                    <span class="badge">Sistemas de Gestión &amp; Backend</span>
+                    </h3>
+
+                    <div class="projects-featured-grid">
+                    
+                    <!-- Proyecto Destacado 1 -->
+                    <article class="project-card featured-card">
+                        <span class="project-featured-badge">Destacado #1</span>
+                        
+                        <div class="project-img-wrapper">
+                        <img src="img/proyecto-1.png" alt="Captura del Sistema de Gestión de Servicios Técnicos y Órdenes de Trabajo">
+                        </div>
+
+                        <div class="project-body">
+                        <div class="project-meta-top">
+                            <span class="meta-tag genre">Sistema de Gestión / ERP</span>
+                            <span class="meta-tag">PHP</span>
+                            <span class="meta-tag">MySQL</span>
+                        </div>
+
+                        <h4 class="project-title">Sistema de Gestión de Servicios Técnicos</h4>
+                        <div class="project-context">Contexto: Plataforma empresarial interna para administración y seguimiento de tickets</div>
+
+                        <p class="project-desc">
+                            Sistema diseñado para centralizar y coordinar las solicitudes de servicio post-venta, asignación geográfica de técnicos a domicilio y trazabilidad del estado de reparaciones en tiempo real.
+                        </p>
+
+                        <div class="project-specs">
+                            <div class="project-spec-item">
+                            <span class="spec-label">Motor / Stack:</span>
+                            <span class="spec-value">PHP, SQL Server, Bootstrap, JavaScript</span>
+                            </div>
+                            <div class="project-spec-item">
+                            <span class="spec-label">Mi Rol:</span>
+                            <span class="spec-value">Desarrolladora Backend &amp; Modelado de Base de Datos</span>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <!-- Placeholder de enlace de GitHub a completar -->
+                            <a href="https://github.com/dscordoba" target="_blank" rel="noopener noreferrer" class="btn-github">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            <span>Ver en GitHub</span>
+                            </a>
+                        </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto Destacado 2 -->
+                    <article class="project-card featured-card">
+                        <span class="project-featured-badge">Destacado #2</span>
+                        
+                        <div class="project-img-wrapper">
+                        <img src="img/proyecto-2.png" alt="Captura del Portal Web de Control de Stock y Repuestos">
+                        </div>
+
+                        <div class="project-body">
+                        <div class="project-meta-top">
+                            <span class="meta-tag genre">Gestión de Stock &amp; Inventario</span>
+                            <span class="meta-tag">PHP</span>
+                            <span class="meta-tag">MySQL</span>
+                        </div>
+
+                        <h4 class="project-title">Portal de Gestión de Stock y Repuestos</h4>
+                        <div class="project-context">Contexto: Control de inventario industrial y auditoría de movimientos</div>
+
+                        <p class="project-desc">
+                            Solución modular para el registro de altas, bajas, transferencias y alertas tempranas de stock de insumos críticos de bombas de agua. Integra generación de reportes e histórico de compras.
+                        </p>
+
+                        <div class="project-specs">
+                            <div class="project-spec-item">
+                            <span class="spec-label">Motor / Stack:</span>
+                            <span class="spec-value">PHP, MySQL Relacional, HTML5, CSS3, JavaScript</span>
+                            </div>
+                            <div class="project-spec-item">
+                            <span class="spec-label">Mi Rol:</span>
+                            <span class="spec-value">Full Stack Developer (Lógica Backend &amp; Consultas SQL)</span>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <!-- Placeholder de enlace de GitHub a completar -->
+                            <a href="https://github.com/dscordoba" target="_blank" rel="noopener noreferrer" class="btn-github">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            <span>Ver en GitHub</span>
+                            </a>
+                        </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card featured-card">
+                        <span class="project-featured-badge">Destacado #3</span>
+                        <div class="project-img-wrapper">
+                        <img src="img/proyecto-3.png" alt="Captura del Módulo de Reportes y Estadísticas de Calidad">
+                        </div>
+
+                        <div class="project-body">
+                        <div class="project-meta-top">
+                            <span class="meta-tag genre">Analítica &amp; Reportes</span>
+                            <span class="meta-tag">PHP</span>
+                            <span class="meta-tag">MySQL</span>
+                        </div>
+
+                        <h4 class="project-title">Módulo de Reportes y Estadísticas de Calidad</h4>
+                        <div class="project-context">Contexto: Monitoreo de indicadores de efectividad técnica y resolución</div>
+
+                        <p class="project-desc">
+                            Herramienta de análisis de datos para calcular tiempos medios de respuesta, tasas de reingreso y generación automática de planillas de control operativo.
+                        </p>
+
+                        <div class="project-specs">
+                            <div class="project-spec-item">
+                            <span class="spec-label">Motor / Stack:</span>
+                            <span class="spec-value">PHP, MySQL, SQLServer, Bootstrap</span>
+                            </div>
+                            <div class="project-spec-item">
+                            <span class="spec-label">Mi Rol:</span>
+                            <span class="spec-value">Desarrollo de Scripts &amp; Vistas de Métricas</span>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/dscordoba" target="_blank" rel="noopener noreferrer" class="btn-github">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            <span>Ver en GitHub</span>
+                            </a>
+                        </div>
+                        </div>
+                    </article>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Divisor decorativo tecnológico -->
+            <div class="tech-divider" aria-hidden="true">
+                <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+                    <path d="M0,25 C400,0 800,40 1200,10 L1200,40 L0,40 Z" fill="rgba(167, 224, 219, 0.25)"></path>
+                </svg>
+            </div>
+
+            <!-- ==========================================================================
+                6. REDES Y CONTACTO PROFESIONAL (#redes)
+                (Íconos grandes SVG inline, abrir en pestaña nueva, WhatsApp sin número en texto)
+                ========================================================================== -->
+            <section id="redes" class="section-wrapper">
+            <div class="container">
+                
+                <div class="section-header">
+                <span class="section-tag">Conectemos</span>
+                <h2 class="section-title">Redes Profesionales</h2>
+                <p class="section-subtitle">
+                    Canales de comunicación directa y repositorios donde comparto código y trayectoria profesional.
+                </p>
+                </div>
+
+                <div class="socials-grid">
+                
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/soledad-cordoba" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="Visitar perfil de LinkedIn de Soledad Córdoba (se abre en nueva pestaña)">
+                    <div class="social-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 0 0 1.45-1.45 1.46 1.46 0 0 0-1.46-1.46 1.45 1.45 0 0 0-1.45 1.46c0 .8.65 1.45 1.46 1.45m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+                    </div>
+                    <div class="social-info">
+                    <h3 class="social-name">LinkedIn</h3>
+                    <p class="social-handle">in/soledad-cordoba</p>
+                    </div>
+                    <svg class="social-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/dscordoba" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="Visitar repositorio de GitHub de Soledad Córdoba (se abre en nueva pestaña)">
+                    <div class="social-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    </div>
+                    <div class="social-info">
+                    <h3 class="social-name">GitHub</h3>
+                    <p class="social-handle">@dscordoba</p>
+                    </div>
+                    <svg class="social-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:cordoba.soledad@hotmail.com" class="social-card" aria-label="Enviar un correo electrónico a cordoba.soledad@hotmail.com">
+                    <div class="social-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </div>
+                    <div class="social-info">
+                    <h3 class="social-name">Correo Electrónico</h3>
+                    <p class="social-handle">cordoba.soledad@hotmail.com</p>
+                    </div>
+                    <svg class="social-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+
+                <!-- WhatsApp: Enlace directo con placeholder NUMERO. Nota: El número NO aparece escrito en el sitio -->
+                <a href="https://wa.me/+5491153179376" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="Contactar por mensaje de WhatsApp (se abre en nueva pestaña)">
+                    <div class="social-icon-wrapper" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.02 2.61c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+                    </div>
+                    <div class="social-info">
+                    <h3 class="social-name">WhatsApp</h3>
+                    <p class="social-handle">Enviar mensaje directo</p>
+                    </div>
+                    <svg class="social-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+
+                </div>
+
+            </div>
+            </section>
+
+            <!-- Divisor decorativo tecnológico -->
+            <div class="tech-divider" aria-hidden="true">
+            <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+                <path d="M0,0 C300,35 900,10 1200,25 L1200,40 L0,40 Z" fill="rgba(167, 224, 219, 0.25)"></path>
+            </svg>
+            </div>
+
+            <!-- ==========================================================================
+                7. FORMULARIO DE CONTACTO (#contacto)
+                (Sin JavaScript, validación nativa HTML5, envío vía Formspree)
+                ========================================================================== -->
+            <section id="contacto" class="section-wrapper tech-grid-bg">
+            <div class="container">
+                
+                <div class="section-header">
+                <span class="section-tag">Escribime</span>
+                <h2 class="section-title">Formulario de Contacto</h2>
+                <p class="section-subtitle">
+                    ¿Tenés una propuesta laboral, proyecto o consulta? Completá el formulario y te responderé a la brevedad.
+                </p>
+                </div>
+
+                <div class="contact-layout">
+                <div class="contact-card">
+                    
+                    <!-- Formulario Formspree: Reemplazar TU_ID por tu identificador de Formspree -->
+                    <form action="https://formspree.io/f/TU_ID" method="POST" class="contact-form">
+                    
+                    <!-- Campo: Nombre -->
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        Nombre completo
+                        </label>
+                        <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        class="form-input" 
+                        placeholder="Tu nombre y apellido" 
+                        required
+                        >
+                    </div>
+
+                    <!-- Campo: Correo Electrónico -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        Correo Electrónico
+                        </label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="ejemplo@correo.com" 
+                        required
+                        >
+                    </div>
+
+                    <!-- Campo: Asunto -->
+                    <div class="form-group">
+                        <label for="asunto" class="form-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        Asunto
+                        </label>
+                        <input 
+                        type="text" 
+                        id="asunto" 
+                        name="_subject" 
+                        class="form-input" 
+                        placeholder="Motivo del mensaje (ej: Propuesta Desarrolladora Backend)" 
+                        required
+                        >
+                    </div>
+
+                    <!-- Campo: Mensaje -->
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+                        Mensaje
+                        </label>
+                        <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        class="form-textarea" 
+                        placeholder="Escribí aquí los detalles de tu consulta o propuesta..." 
+                        required
+                        ></textarea>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <button type="submit" class="btn btn-accent form-submit-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        Enviar Mensaje
+                    </button>
+
+                    </form>
+
+                </div>
+                </div>
+
+            </div>
+            </section>
+        </main>
+
+        <!-- ==========================================================================
+        8. FOOTER
+        ========================================================================== -->
+        <footer class="footer">
+            <div class="container footer-content">
+            
+            <div class="footer-logo">&lt; SC Dev /&gt;</div>
+            
+            <p class="footer-detail">
+                Desarrolladora Web &amp; Backend • Sistemas de Gestión, PHP, .NET.
+            </p>
+
+            <!-- Detalle decorativo tecnológico con líneas y curvas sutiles -->
+            <div class="footer-tech-lines" aria-hidden="true">
+                <span class="footer-line"></span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-acento)">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span class="footer-line"></span>
+            </div>
+
+            <p class="footer-copy">
+                &copy; 2026 Soledad Córdoba. Todos los derechos reservados.
+            </p>
+
+            <a href="#inicio" class="footer-back-to-top" aria-label="Volver al inicio de la página">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                Volver arriba
+            </a>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
